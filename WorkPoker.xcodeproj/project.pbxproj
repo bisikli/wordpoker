@@ -13,6 +13,9 @@
 		C6EE24711E4C5BED000B5192 /* WorkPoker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6EE246F1E4C5BED000B5192 /* WorkPoker.xcdatamodeld */; };
 		C6EE24731E4C5BED000B5192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6EE24721E4C5BED000B5192 /* Assets.xcassets */; };
 		C6EE24761E4C5BED000B5192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6EE24741E4C5BED000B5192 /* LaunchScreen.storyboard */; };
+		C6EE247E1E4CAF78000B5192 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EE247D1E4CAF78000B5192 /* DataManager.swift */; };
+		C6EE24801E4DA590000B5192 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EE247F1E4DA58F000B5192 /* InputView.swift */; };
+		C6EE24821E4DA59E000B5192 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6EE24811E4DA59E000B5192 /* InputView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C6EE24721E4C5BED000B5192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6EE24751E4C5BED000B5192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6EE24771E4C5BED000B5192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6EE247D1E4CAF78000B5192 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C6EE247F1E4DA58F000B5192 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		C6EE24811E4DA59E000B5192 /* InputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,9 @@
 				C6EE246C1E4C5BED000B5192 /* Main.storyboard */,
 				C6EE24721E4C5BED000B5192 /* Assets.xcassets */,
 				C6EE24741E4C5BED000B5192 /* LaunchScreen.storyboard */,
+				C6EE247F1E4DA58F000B5192 /* InputView.swift */,
+				C6EE24811E4DA59E000B5192 /* InputView.xib */,
+				C6EE247D1E4CAF78000B5192 /* DataManager.swift */,
 				C6EE24771E4C5BED000B5192 /* Info.plist */,
 				C6EE246F1E4C5BED000B5192 /* WorkPoker.xcdatamodeld */,
 			);
@@ -128,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6EE24761E4C5BED000B5192 /* LaunchScreen.storyboard in Resources */,
+				C6EE24821E4DA59E000B5192 /* InputView.xib in Resources */,
 				C6EE24731E4C5BED000B5192 /* Assets.xcassets in Resources */,
 				C6EE246E1E4C5BED000B5192 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6EE246B1E4C5BED000B5192 /* ViewController.swift in Sources */,
+				C6EE247E1E4CAF78000B5192 /* DataManager.swift in Sources */,
+				C6EE24801E4DA590000B5192 /* InputView.swift in Sources */,
 				C6EE24691E4C5BED000B5192 /* AppDelegate.swift in Sources */,
 				C6EE24711E4C5BED000B5192 /* WorkPoker.xcdatamodeld in Sources */,
 			);
@@ -267,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J8L6CLSPA8;
 				INFOPLIST_FILE = WorkPoker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BY.WorkPoker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J8L6CLSPA8;
 				INFOPLIST_FILE = WorkPoker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BY.WorkPoker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
