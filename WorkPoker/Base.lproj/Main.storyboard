@@ -33,7 +33,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="70b-Ub-49O" id="zVc-Pd-YZu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -66,6 +66,7 @@
                     <connections>
                         <outlet property="list" destination="Cf1-gv-H7a" id="uvq-ay-CAa"/>
                         <outlet property="searchBar" destination="9r8-i2-sn5" id="Umd-bR-r48"/>
+                        <outlet property="sortButton" destination="E4T-Ro-hDC" id="lww-3y-bp1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

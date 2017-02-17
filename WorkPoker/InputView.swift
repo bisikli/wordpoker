@@ -18,13 +18,15 @@ class InputView: UIView {
     }
     */
     var view: UIView!
+    var parent: UIView?
+    var container: UIView?
     let handler: ((InputView)-> Void)?
     let cancelHandler: ((InputView)-> Void)?
     
-    init(frame: CGRect, actionHandler:((InputView)-> Void)?, cancelHandler:((InputView)-> Void)?){
+    init(parent: UIView, frame: CGRect, actionHandler:((InputView)-> Void)?, cancelHandler:((InputView)-> Void)?){
         handler = actionHandler
         self.cancelHandler = cancelHandler
-        
+        self.parent = parent
         super.init(frame: frame)
         loadViewFromNib()
     }
@@ -32,7 +34,7 @@ class InputView: UIView {
     required init?(coder aDecoder: NSCoder) {
         handler = nil
         cancelHandler = nil
-        
+        parent = nil
         super.init(coder: aDecoder)!
         loadViewFromNib()
     }
@@ -47,7 +49,18 @@ class InputView: UIView {
         view.layer.cornerRadius = 10
         
         addSubview(view)
+        
+        container = UIView(frame: (UIApplication.shared.keyWindow?.bounds)!)
+        container?.backgroundColor = UIColor.gray
+        container?.layer.opacity = 0.5
+        
+        parent?.addSubview(container!)
+        
+        parent?.addSubview(self)
+        parent?.bringSubview(toFront: self)
     }
+    
+    
     
     
     @IBOutlet weak var word: UITextField!
@@ -59,6 +72,7 @@ class InputView: UIView {
         if let handler = handler {
             handler(self)
             self.removeFromSuperview()
+            container?.removeFromSuperview()
         }
         
         
@@ -70,6 +84,7 @@ class InputView: UIView {
         }
         
         self.removeFromSuperview()
+        container?.removeFromSuperview()
         
     }
 
